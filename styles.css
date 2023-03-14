@@ -15,13 +15,18 @@ h1,
 }
 
 .main-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 25%;
   height: 100%;
   width: 100%;
 }
 
+/* Brand section */
 .brand-container {
   height: 100%;
-  width: 50%;
+  width: 40%;
 }
 
 .logo-name-container,
@@ -48,4 +53,23 @@ h1,
   justify-content: center;
   flex-wrap: wrap;
   align-content: flex-end;
+}
+
+/* Sign up section */
+.sign-up-container {
+  height: 100%;
+  width: 60%;
+}
+
+.top-divider,
+.bottom-divider {
+  /* TODO: Probably best to change this so that the middle-divider is
+  centered centrally, and the top and bottom use up the remaining space. */
+  height: 31%;
+  width: 100%;
+}
+
+.middle-divider {
+  height: 33%;
+  width: 100%;
 }
