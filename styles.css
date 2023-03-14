@@ -1,9 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&display=swap");
 
 body {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vh;
 }
 
-h1 {
-    font-family: 'IM Fell Double Pica', serif;
+h1,
+.photo-credit,
+.photo-source {
+  font-family: "IM Fell Double Pica", serif;
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+}
+
+.brand-container {
+  height: 100%;
+  width: 50%;
+}
+
+.logo-name-container,
+.credit-container {
+  display: flex;
+  height: 50%;
+}
+
+.image-header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 10%;
+  height: 34%;
+  width: 100%;
+}
+
+#rune-logo {
+  max-height: 100%;
+}
+
+.credit-container {
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-end;
 }
