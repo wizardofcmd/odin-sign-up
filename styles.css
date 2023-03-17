@@ -17,16 +17,17 @@ h1,
 .main-container {
   display: flex;
   flex-direction: column;
+  gap: 15%;
   flex-wrap: wrap;
-  gap: 25%;
   height: 100%;
   width: 100%;
 }
 
 /* Brand section */
 .brand-container {
+  background-image: url("./images/background.jpg");
   height: 100%;
-  width: 40%;
+  width: 65%;
 }
 
 .logo-name-container,
@@ -58,7 +59,7 @@ h1,
 /* Sign up section */
 .sign-up-container {
   height: 100%;
-  width: 60%;
+  width: auto;
 }
 
 .top-divider,
