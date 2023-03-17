@@ -1,33 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vh;
 }
 
 h1,
 .photo-credit,
 .photo-source {
+  margin: 0;
   font-family: "IM Fell Double Pica", serif;
 }
 
 .main-container {
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  gap: 15%;
-  flex-wrap: wrap;
-  height: 100%;
-  width: 100%;
 }
 
 /* Brand section */
 .brand-container {
   background-image: url("./images/background.jpg");
-  height: 100%;
+  color: rgb(233, 233, 233);
+  width: 35%;
+}
+
+/* Sign up section */
+.sign-up-container {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
   width: 65%;
+}
+
+.brand-container a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .logo-name-container,
@@ -37,13 +46,15 @@ h1,
 }
 
 .image-header-wrapper {
+  background-color: rgba(0, 0, 0, 0.253);
   display: flex;
   justify-content: center;
   align-items: center;
   align-self: center;
-  gap: 10%;
+  gap: 5%;
   height: 34%;
   width: 100%;
+  padding: 2% 2%;
 }
 
 #rune-logo {
@@ -56,21 +67,32 @@ h1,
   align-content: flex-end;
 }
 
-/* Sign up section */
-.sign-up-container {
-  height: 100%;
-  width: auto;
-}
-
 .top-divider,
 .bottom-divider {
   /* TODO: Probably best to change this so that the middle-divider is
   centered centrally, and the top and bottom use up the remaining space. */
-  height: 31%;
-  width: 100%;
+  display: flex;
+  background-color: grey;
+  flex: 1;
+}
+
+.top-divider {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .middle-divider {
   height: 33%;
-  width: 100%;
+  flex: 1;
+  background-color: rgb(235, 235, 235);
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: row;
+}
+
+h3 {
+  margin: 0;
 }
