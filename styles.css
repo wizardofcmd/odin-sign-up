@@ -88,7 +88,7 @@ h1,
   flex-direction: column;
   flex: 1;
   padding: 3%;
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
   box-shadow: 0px 2px 5px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -125,13 +125,25 @@ input {
   border-width: 1px;
   border-style: solid;
   border-color: rgb(204, 204, 204);
+  padding-left: 4px;
 }
 
 input:focus {
   outline: none;
   border-color: rgb(82, 143, 255);
-  transition: all 0.1s;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: all 0.1s;
+}
+
+.invalid-password {
+  border-color: red;
+}
+
+.error-not-matching {
+  font-size: 0.7rem;
+  color: red;
+  font-weight: bold;
+  margin-top: 2px;
 }
 
 .create-account-btn {
@@ -144,6 +156,11 @@ input:focus {
   color: white;
   font-weight: bold;
   border-radius: 10px;
+}
+
+.create-account-btn:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
 #login-link {
